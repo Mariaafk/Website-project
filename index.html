@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Welcome to Pets Training School! 🐶</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #5c6bc0;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #5c6bc0;
+            border-radius: 20px;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #5c6bc0;
+            color: #fff;
+        }
+
+        .title-box {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #5c6bc0;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .title-box h1 {
+            font-size: 50px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        section {
+            position: relative;
+            margin-bottom: 40px;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: #5c6bc0;
+            font-weight: bold;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+        section#about p,
+        section#services p,
+        section#trainers p {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #5c6bc0;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-overlay:hover {
+            opacity: 1;
+        }
+
+        .image-overlay-content {
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .image-overlay-content h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .image-overlay-content p {
+            font-size: 18px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .triple-image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .triple-image-container img {
+            width: calc(33.33% - 10px);
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        section#testimonials {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        section#testimonials .container {
+            padding: 40px 20px;
+        }
+
+        section#testimonials .image-overlay-content {
+            max-width: 800px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        section#testimonials p {
+            color: #555;
+        }
+
+        section#contact {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        section#contact .container {
+            padding: 40px 20px;
+        }
+
+        section#about {
+            max-width: 800px;
+            padding: 8px;
+            margin: 0 auto;
+        }
+
+        section#contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section#contact ul li {
+            margin-bottom: 10px;
+        }
+
+        section#contact ul li strong {
+            font-weight: bold;
+            color: #5c6bc0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1>Welcome to Pets Training School</h1>
+        </div>
+
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#trainers">Meet the Trainers</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <section id="about">
+            <div>
+                <img src="dog.jpg" alt="About Us Image">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>About Us</h2>
+                        <p>Welcome to Pets Training School, where we believe every pet has the potential to be a well-behaved companion. Our dedicated team of trainers is here to help you and your furry friend build a strong bond through positive reinforcement techniques. Whether you're looking to address behavioral issues or simply want to enhance your pet's obedience skills, you've come to the right place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div>
+                <img src="1.jpg" alt="Services Image">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Services</h2>
+                        <p>At Pets Training School, we have a passion for helping pets and their owners achieve harmony in their relationship. With years of experience in animal behavior and training, our certified trainers are committed to providing personalized instruction tailored to the unique needs of each pet. From puppies to seniors, and everything in between, we're here to support you on your journey to a well-trained pet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trainers">
+            <div class="triple-image-container">
+                <img src="trainer5.jpg" alt="Trainer Image 1">
+                <img src="trainer4.jpg" alt="Trainer Image 2">
+                <img src="trainer3.jpg" alt="Trainer Image 3">
+            </div>
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>Meet the Trainers</h2>
+                    <p>Get to know our dedicated team of trainers who are passionate about helping pets and their owners.</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div class="container">
+                <div class="image-overlay-content">
+                    <h2>Testimonials</h2>
+                    <p>At Pets Training School, we're dedicated to helping pets and their owners achieve remarkable transformations. From unruly behaviors to newfound obedience, our tailored training programs have made a real difference in the lives of countless furry companions and their families. Our experience with positive reinforcement techniques, coupled with our genuine passion for animals, ensures that every pet receives the care and attention they deserve. Join our growing community of satisfied clients.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="image-overlay-content">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us to learn more about our training services and schedule your initial consultation.</p>
+                    <ul>
+                        <li><strong>Address:</strong> George Baritiu Street, Cluj, Cluj Napoca</li>
+                        <li><strong>Phone:</strong> +1234567890</li>
+                        <li><strong>Email:</strong> info@petstrainingschool.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pets Training School. All rights reserved. | Designed by N.M</p>
+        </div>
+    </footer>
+</body>
+</html>
